@@ -39,14 +39,19 @@ jobs:
           restore-keys: |
             yfinance-price-cache-${{ runner.os }}-
 
-      - name: Update Google Sheets paper trading
+      - name: Run local paper trading
         env:
           PYTHONPATH: ${{ github.workspace }}/src:${{ github.workspace }}/scripts
           FIXED8_DATA_DIR: ${{ github.workspace }}/outputs
           FIXED8_PRICE_CACHE_DIR: ${{ github.workspace }}/work/price_cache
-          GOOGLE_SHEET_ID: ${{ secrets.GOOGLE_SHEET_ID }}
-          GCP_SERVICE_ACCOUNT_JSON: ${{ secrets.GCP_SERVICE_ACCOUNT_JSON }}
-        run: python scripts/update_paper_to_google_sheets.py
+        run: |
+          python -c "
+          import sys
+          sys.path.append('scripts')
+          from paper_trading_v01 import update_paper_trading
+          payload = update_paper_trading()
+          print(payload)
+          "
 
       - name: Commit and push updated paper trading state
         shell: bash
