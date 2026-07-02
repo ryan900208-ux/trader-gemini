@@ -521,10 +521,10 @@
           
           // Try to fetch candidates (Rule-Based Strict list)
           try {
-            let candidatesRes = await fetch(`${baseRawUrl}/outputs/today_model_signals/strict_candidates_${payload.latest_date}_named.csv`);
+            let candidatesRes = await fetch(`${baseRawUrl}/outputs/today_model_signals/final_score_only_${payload.latest_date}_named.csv`);
             if (!candidatesRes.ok) {
               // Try without _named
-              candidatesRes = await fetch(`${baseRawUrl}/outputs/today_model_signals/strict_candidates_${payload.latest_date}.csv`);
+              candidatesRes = await fetch(`${baseRawUrl}/outputs/today_model_signals/final_score_only_${payload.latest_date}.csv`);
             }
             if (candidatesRes.ok) {
               const candText = await candidatesRes.text();
