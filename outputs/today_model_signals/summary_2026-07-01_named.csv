@@ -2,11 +2,11 @@
 latest_date,2026-07-01
 market_regime,bull
 universe_rows,1083
-candidate_rows,99
+candidate_rows,103
 max_positions,5
 position_weight,0.2
-aggressive_fund_final_ml_top5,"6139.TW 亞翔,2458.TW 義隆,3443.TW 創意,6944.TW 兆聯實業,2379.TW 瑞昱"
-defensive_fund_ml_85_15_top5,"6944.TW 兆聯實業,3014.TW 聯陽,2527.TW 宏璟,1342.TW 八貫,2458.TW 義隆"
+aggressive_fund_final_ml_top5,"3443.TW 創意,6139.TW 亞翔,2458.TW 義隆,6944.TW 兆聯實業,3014.TW 聯陽"
+defensive_fund_ml_85_15_top5,"6944.TW 兆聯實業,3014.TW 聯陽,3443.TW 創意,2527.TW 宏璟,1342.TW 八貫"
 fundamental_only_top5,"2059.TW 川湖,2330.TW 台積電,2344.TW 華邦電,6781.TW AES-KY,6944.TW 兆聯實業"
 final_score_only_top5,"2059.TW 川湖,2379.TW 瑞昱,2327.TW 國巨*,6525.TW 捷敏-KY,8016.TW 矽創"
-stable_ml_only_top5,"6757.TW 台灣虎航,3346.TW 麗清,1342.TW 八貫,6691.TW 洋基工程,2535.TW 達欣工"
+stable_ml_only_top5,"6691.TW 洋基工程,6757.TW 台灣虎航,2923.TW 鼎固-KY,3346.TW 麗清,2535.TW 達欣工"
