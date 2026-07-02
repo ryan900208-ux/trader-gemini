@@ -1,0 +1,65 @@
+name: Update Fixed8 Paper Trading
+
+on:
+  workflow_dispatch:
+  workflow_run:
+    workflows: ["Update Fixed8 Signals"]
+    types: [completed]
+    branches: [main]
+  schedule:
+    # Fallback: 07:55 UTC = 15:55 Asia/Taipei
+    - cron: "55 7 * * 1-5"
+
+permissions:
+  contents: write
+
+jobs:
+  update-paper:
+    if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Restore price cache
+        uses: actions/cache@v4
+        with:
+          path: work/price_cache
+          key: yfinance-price-cache-${{ runner.os }}-paper-${{ github.run_id }}
+          restore-keys: |
+            yfinance-price-cache-${{ runner.os }}-
+
+      - name: Update Google Sheets paper trading
+        env:
+          PYTHONPATH: ${{ github.workspace }}/src:${{ github.workspace }}/scripts
+          FIXED8_DATA_DIR: ${{ github.workspace }}/outputs
+          FIXED8_PRICE_CACHE_DIR: ${{ github.workspace }}/work/price_cache
+          GOOGLE_SHEET_ID: ${{ secrets.GOOGLE_SHEET_ID }}
+          GCP_SERVICE_ACCOUNT_JSON: ${{ secrets.GCP_SERVICE_ACCOUNT_JSON }}
+        run: python scripts/update_paper_to_google_sheets.py
+
+      - name: Commit and push updated paper trading state
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add outputs/paper_trading_v0_1/*
+          
+          if git diff --cached --quiet; then
+            echo "No paper trading changes to commit."
+            exit 0
+          fi
+          
+          git commit -m "Update Fixed8 paper trading state"
+          git pull --rebase origin main
+          git push origin HEAD:main
