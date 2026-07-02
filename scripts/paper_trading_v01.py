@@ -44,7 +44,7 @@ def update_paper_trading() -> dict:
     state = _load_state()
     latest_date = _latest_signal_date()
     features = _read_named_csv(f"latest_features_{latest_date}_named.csv")
-    candidates = _read_named_csv(f"strict_candidates_{latest_date}_named.csv")
+    candidates = _read_named_csv(f"final_score_only_{latest_date}_named.csv")
     if state["start_date"] is None:
         state["start_date"] = latest_date
         state["last_signal_date"] = latest_date
@@ -64,7 +64,7 @@ def dashboard_payload() -> dict:
     latest_date = _latest_signal_date()
     state = _load_state()
     features = _read_named_csv(f"latest_features_{latest_date}_named.csv")
-    candidates = _read_named_csv(f"strict_candidates_{latest_date}_named.csv")
+    candidates = _read_named_csv(f"final_score_only_{latest_date}_named.csv")
     aggressive = _read_named_csv(f"aggressive_fund_final_ml_{latest_date}_named.csv")
     summary = _read_named_csv(f"summary_{latest_date}_named.csv")
     holdings = _holdings_table(state, features)
@@ -110,11 +110,11 @@ def _save_state(state: dict) -> None:
 
 
 def _latest_signal_date() -> str:
-    files = sorted(SIGNAL_DIR.glob("strict_candidates_*.csv"))
+    files = sorted(SIGNAL_DIR.glob("final_score_only_*.csv"))
     if not files:
-        raise FileNotFoundError("No strict_candidates signal file found. Run scripts/run_today_model_signals.py first.")
+        raise FileNotFoundError("No final_score_only signal file found. Run scripts/run_today_model_signals.py first.")
     dates = [
-        path.stem.replace("strict_candidates_", "").replace("_named", "")
+        path.stem.replace("final_score_only_", "").replace("_named", "")
         for path in files
     ]
     return sorted(set(dates))[-1]
