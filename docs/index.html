@@ -501,30 +501,32 @@
           
           let snapshotsText, tradesText, state;
           try {
-            // Fetch raw snapshots and trades and state
-            const snapshotsRes = await fetch(`${baseRawUrl}/outputs/paper_trading_v0_1/daily_snapshots.csv`);
-            if (!snapshotsRes.ok) throw new Error(`無法讀取 daily_snapshots.csv`);
-            snapshotsText = await snapshotsRes.text();
+          // Fetch raw snapshots and trades and state with cache busting
+          const cacheBuster = `t=${Date.now()}`;
+          const snapshotsRes = await fetch(`${baseRawUrl}/outputs/paper_trading_v0_1/daily_snapshots.csv?${cacheBuster}`);
+          if (!snapshotsRes.ok) throw new Error(`無法讀取 daily_snapshots.csv`);
+          snapshotsText = await snapshotsRes.text();
             
-            const tradesRes = await fetch(`${baseRawUrl}/outputs/paper_trading_v0_1/trades.csv`);
-            if (!tradesRes.ok) throw new Error(`無法讀取 trades.csv`);
-            tradesText = await tradesRes.text();
+          const tradesRes = await fetch(`${baseRawUrl}/outputs/paper_trading_v0_1/trades.csv?${cacheBuster}`);
+          if (!tradesRes.ok) throw new Error(`無法讀取 trades.csv`);
+          tradesText = await tradesRes.text();
             
-            const stateRes = await fetch(`${baseRawUrl}/outputs/paper_trading_v0_1/state.json`);
-            if (!stateRes.ok) throw new Error(`無法讀取 state.json`);
-            state = await stateRes.json();
+          const stateRes = await fetch(`${baseRawUrl}/outputs/paper_trading_v0_1/state.json?${cacheBuster}`);
+          if (!stateRes.ok) throw new Error(`無法讀取 state.json`);
+          state = await stateRes.json();
           } catch (e) {
-            throw new Error(`無法自 GitHub 獲取數據。請確認：\n1. 您的儲存庫為公開（Public），或資料已 Push 上 GitHub。\n2. 設定中輸入的 GitHub 帳號與倉庫名稱正確。\n3. 原報錯: ${e.message}`);
+          throw new Error(`無法自 GitHub 獲取數據。請確認：\n1. 您的儲存庫為公開（Public），或資料已 Push 上 GitHub。\n2. 設定中輸入的 GitHub 帳號與倉庫名稱正確。\n3. 原報錯: ${e.message}`);
           }
           
           payload = parseStaticFiles(snapshotsText, tradesText, state);
           
           // Try to fetch candidates (Rule-Based Strict list)
           try {
-            let candidatesRes = await fetch(`${baseRawUrl}/outputs/today_model_signals/final_score_only_${payload.latest_date}_named.csv`);
+            const cacheBuster = `t=${Date.now()}`;
+            let candidatesRes = await fetch(`${baseRawUrl}/outputs/today_model_signals/final_score_only_${payload.latest_date}_named.csv?${cacheBuster}`);
             if (!candidatesRes.ok) {
               // Try without _named
-              candidatesRes = await fetch(`${baseRawUrl}/outputs/today_model_signals/final_score_only_${payload.latest_date}.csv`);
+              candidatesRes = await fetch(`${baseRawUrl}/outputs/today_model_signals/final_score_only_${payload.latest_date}.csv?${cacheBuster}`);
             }
             if (candidatesRes.ok) {
               const candText = await candidatesRes.text();
@@ -575,7 +577,12 @@
     }
 
     // CSV to JSON Parser
+       // CSV to JSON Parser
     function csvToDict(csvText) {
+      // Remove UTF-8 BOM if present to avoid broken keys (e.g. \uFEFFdate)
+      if (csvText.startsWith('\uFEFF')) {
+        csvText = csvText.substring(1);
+      }
       const lines = csvText.trim().split('\n');
       if (lines.length < 2) return [];
       const headers = lines[0].split(',');
