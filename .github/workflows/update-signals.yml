@@ -1,0 +1,71 @@
+name: Update Fixed8 Signals
+
+on:
+  workflow_dispatch:
+  schedule:
+    # 07:35 UTC = 15:35 Asia/Taipei
+    - cron: "35 7 * * 1-5"
+
+concurrency:
+  group: fixed8-signals-main
+  cancel-in-progress: true
+
+permissions:
+  contents: write
+
+jobs:
+  update-signals:
+    runs-on: ubuntu-latest
+    timeout-minutes: 55
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Show run time
+        run: |
+          echo "UTC time:"
+          date -u
+          echo "Taipei time:"
+          TZ=Asia/Taipei date
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Restore price cache
+        uses: actions/cache@v4
+        with:
+          path: work/price_cache
+          key: yfinance-price-cache-${{ runner.os }}-${{ github.run_id }}
+          restore-keys: |
+            yfinance-price-cache-${{ runner.os }}-
+
+      - name: Run signal update
+        env:
+          PYTHONPATH: ${{ github.workspace }}/src:${{ github.workspace }}/scripts
+          FIXED8_DATA_DIR: ${{ github.workspace }}/outputs
+          FIXED8_PRICE_CACHE_DIR: ${{ github.workspace }}/work/price_cache
+        run: python scripts/run_today_model_signals.py
+
+      - name: Commit and push updated signals
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add outputs/today_model_signals/*.csv
+
+          if git diff --cached --quiet; then
+            echo "No signal changes to commit."
+            exit 0
+          fi
+
+          git commit -m "Update Fixed8 daily signals"
+          git pull --rebase origin main
+          git push origin HEAD:main
