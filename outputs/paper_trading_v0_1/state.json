@@ -1,0 +1,9 @@
+{
+  "model_version": "Rule-Based Strict",
+  "initial_cash": 1000000.0,
+  "cash": 1000000.0,
+  "start_date": "2026-07-01",
+  "last_signal_date": "2026-07-01",
+  "positions": [],
+  "pending_orders": []
+}

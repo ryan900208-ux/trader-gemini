@@ -1,0 +1,9 @@
+pandas>=2.0
+numpy>=1.24
+yfinance>=0.2.40
+scikit-learn>=1.9
+lightgbm>=4.6
+xgboost>=3.2
+streamlit>=1.45
+gspread>=6.2
+google-auth>=2.40

@@ -1,0 +1,76 @@
+{
+  "strategy_name": "no_pool_lgbm_rank_v2",
+  "base_config": "config/fixed8_control_eva_top15_pool_best_sweep.json",
+  "description": "No fixed EVA pool. EVA-like and fundamental metrics are model features; broad technical candidates are ranked by LightGBM reward score.",
+  "model": {
+    "type": "LightGBMRegressor",
+    "target": "reward_60 = forward_60d_return - 0.5 * abs(forward_60d_max_drawdown)",
+    "walk_forward_train_test": [
+      {"train": "2020-07-01 to 2022-12-31", "test": "2023"},
+      {"train": "2020-07-01 to 2022-12-31", "validation": "2023", "test": "2024"},
+      {"train": "2020-07-01 to 2023-12-31", "validation": "2024", "test": "2025"},
+      {"train": "2020-07-01 to 2024-12-31", "validation": "2025", "test": "2026"}
+    ],
+    "features": [
+      "technical_score",
+      "fundamental_score",
+      "eva_like_score",
+      "fundamental_rank",
+      "rs20_rank_pct",
+      "rs60_rank_pct",
+      "rsi14",
+      "ret5",
+      "ret20",
+      "ret60",
+      "ret120",
+      "benchmark_ret20",
+      "benchmark_ret60",
+      "volume_ratio",
+      "ma20_deviation",
+      "ma20_slope",
+      "roe",
+      "roa",
+      "roic_proxy",
+      "eps",
+      "debt_to_equity",
+      "gross_margin",
+      "operating_margin",
+      "net_margin",
+      "revenue_growth"
+    ]
+  },
+  "candidate_rules": {
+    "eva_pool": false,
+    "market_regime": ["bull", "neutral"],
+    "min_technical_score": 55,
+    "rs20_rank_pct_max": 0.5,
+    "rs60_rank_pct_max": 0.6,
+    "price_trend": "Close > MA60",
+    "ma20_slope_min": -0.005,
+    "rsi14_min": 45,
+    "rsi14_max": 78,
+    "ret20_vs_benchmark_multiplier_min": 0.4,
+    "ret60_vs_benchmark_multiplier_min": 0.4,
+    "ret5_max": 0.15,
+    "ret20_max": 0.65,
+    "volume_ratio_min": 0.5,
+    "volume_ratio_max": 4.5,
+    "ma20_deviation_abs_max": 0.25
+  },
+  "portfolio": {
+    "max_positions": 5,
+    "position_weight": 0.2,
+    "position_sizing": "equity",
+    "ranking": "lgbm_reward_score desc, final_score desc"
+  },
+  "exit": {
+    "stop_loss": 0.12,
+    "trend_exit": "Close < MA120",
+    "market_bear_exit": true,
+    "max_holding_days": 252
+  },
+  "outputs": {
+    "walk_forward": "outputs/full_market_lgbm_no_eva_pool",
+    "robustness": "outputs/no_pool_lgbm_robustness"
+  }
+}

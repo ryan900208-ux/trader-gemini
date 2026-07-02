@@ -1,0 +1,67 @@
+{
+  "strategy_name": "fixed8_control_eva_top20_pool_trend_equity",
+  "start": "2020-01-01",
+  "end": null,
+  "benchmark_symbol": "0050.TW",
+  "universe_csv": "data/universe_twse_all.csv",
+  "fundamentals_csv": "data/fundamentals_finmind_history.csv",
+  "use_fundamentals": true,
+  "use_fundamental_filter": false,
+  "fundamental_universe_filter": {
+    "enabled": true,
+    "min_score": 0,
+    "top_n": 20
+  },
+  "use_yfinance_fundamental_snapshot": false,
+  "yfinance_batch_size": 80,
+  "price_cache_dir": "work/price_cache",
+  "initial_cash": 1000000,
+  "max_positions": 5,
+  "position_weight": 0.2,
+  "position_sizing": "equity",
+  "commission_rate": 0.001425,
+  "tax_rate": 0.003,
+  "slippage_rate": 0.001,
+  "cooldown_days_after_stop": 30,
+  "entry": {
+    "min_score": 75,
+    "rs20_top_pct": 0.3,
+    "rs60_top_pct": 0.4,
+    "rs_rank_scope": "fundamental_universe",
+    "rsi_min": 50,
+    "rsi_max": 72,
+    "ret5_max": 0.1,
+    "ret20_max": 0.4,
+    "volume_ratio_min": 0.8,
+    "volume_ratio_max": 3.0,
+    "ma20_deviation_max": 0.15,
+    "allowed_market_regimes": ["bull", "neutral"]
+  },
+  "exit": {
+    "stop_loss": 0.12,
+    "max_holding_days": 252,
+    "rs20_weak_days": 999
+  },
+  "market_regime": {
+    "bear_close_below_ma": 120,
+    "bear_ma_fast": 20,
+    "bear_ma_slow": 60
+  },
+  "score_weights": {
+    "technical": 0.75,
+    "fundamental": 0.25
+  },
+  "fundamental_filters": {
+    "min_fundamental_score": 60,
+    "min_eva_like_score": 65,
+    "min_roe": 0.08,
+    "min_revenue_growth": 0.0,
+    "min_eps": 0.0,
+    "max_debt_to_equity": 2.0,
+    "min_pe": 0.0,
+    "max_pe": 45.0,
+    "min_pb": 0.0,
+    "max_pb": 8.0
+  },
+  "output_dir": "outputs/fixed8_control_eva_top20_pool_trend_equity"
+}
