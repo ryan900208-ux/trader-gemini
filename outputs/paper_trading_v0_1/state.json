@@ -5,5 +5,41 @@
   "start_date": "2026-07-01",
   "last_signal_date": "2026-07-01",
   "positions": [],
-  "pending_orders": []
+  "pending_orders": [
+    {
+      "type": "buy",
+      "symbol": "2059.TW",
+      "name": "川湖",
+      "signal_date": "2026-07-01",
+      "status": "pending_next_open"
+    },
+    {
+      "type": "buy",
+      "symbol": "2379.TW",
+      "name": "瑞昱",
+      "signal_date": "2026-07-01",
+      "status": "pending_next_open"
+    },
+    {
+      "type": "buy",
+      "symbol": "2327.TW",
+      "name": "國巨*",
+      "signal_date": "2026-07-01",
+      "status": "pending_next_open"
+    },
+    {
+      "type": "buy",
+      "symbol": "6525.TW",
+      "name": "捷敏-KY",
+      "signal_date": "2026-07-01",
+      "status": "pending_next_open"
+    },
+    {
+      "type": "buy",
+      "symbol": "8016.TW",
+      "name": "矽創",
+      "signal_date": "2026-07-01",
+      "status": "pending_next_open"
+    }
+  ]
 }
