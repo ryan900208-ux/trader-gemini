@@ -1,45 +1,60 @@
 {
   "model_version": "Rule-Based Strict",
   "initial_cash": 1000000.0,
-  "cash": 1000000.0,
+  "cash": 256.0681133001053,
   "start_date": "2026-07-01",
   "last_signal_date": "2026-07-01",
-  "positions": [],
-  "pending_orders": [
+  "positions": [
     {
-      "type": "buy",
       "symbol": "2059.TW",
       "name": "川湖",
-      "signal_date": "2026-07-01",
-      "status": "pending_next_open"
+      "shares": 27,
+      "entry_signal_date": "2026-07-01",
+      "entry_date": "2026-07-02",
+      "entry_price": 7382.374999999999,
+      "entry_cost": 199608.16187812499,
+      "holding_bars": 1
     },
     {
-      "type": "buy",
       "symbol": "2379.TW",
       "name": "瑞昱",
-      "signal_date": "2026-07-01",
-      "status": "pending_next_open"
+      "shares": 253,
+      "entry_signal_date": "2026-07-01",
+      "entry_date": "2026-07-02",
+      "entry_price": 801.8009999999999,
+      "entry_cost": 203144.722305525,
+      "holding_bars": 1
     },
     {
-      "type": "buy",
       "symbol": "2327.TW",
       "name": "國巨*",
-      "signal_date": "2026-07-01",
-      "status": "pending_next_open"
+      "shares": 184,
+      "entry_signal_date": "2026-07-01",
+      "entry_date": "2026-07-02",
+      "entry_price": 1096.0949999999998,
+      "entry_cost": 201968.87610899998,
+      "holding_bars": 1
     },
     {
-      "type": "buy",
       "symbol": "6525.TW",
       "name": "捷敏-KY",
-      "signal_date": "2026-07-01",
-      "status": "pending_next_open"
+      "shares": 1336,
+      "entry_signal_date": "2026-07-01",
+      "entry_date": "2026-07-02",
+      "entry_price": 149.6495,
+      "entry_cost": 200216.63471809996,
+      "holding_bars": 1
     },
     {
-      "type": "buy",
       "symbol": "8016.TW",
       "name": "矽創",
-      "signal_date": "2026-07-01",
-      "status": "pending_next_open"
+      "shares": 588,
+      "entry_signal_date": "2026-07-01",
+      "entry_date": "2026-07-02",
+      "entry_price": 330.8305,
+      "entry_cost": 194805.53687594997,
+      "holding_bars": 1
     }
-  ]
+  ],
+  "pending_orders": []
 }
