@@ -1,1 +1,2 @@
-symbol,name,entry_signal_date,entry_date,exit_signal_date,exit_date,entry_price,exit_price,shares,pnl
+﻿symbol,name,entry_signal_date,entry_date,exit_signal_date,exit_date,entry_price,exit_price,shares,pnl,return_pct,holding_bars,exit_reason
+2327.TW,國巨*,2026-07-01,2026-07-02,2026-07-07,2026-07-08,1096.0949999999998,906.0,184,-36168.507643799996,-0.1734293104156116,7.0,stop_loss
