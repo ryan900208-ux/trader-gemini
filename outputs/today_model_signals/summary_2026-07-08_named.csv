@@ -1,0 +1,12 @@
+﻿item,value
+latest_date,2026-07-08
+market_regime,bull
+universe_rows,1082
+candidate_rows,130
+max_positions,5
+position_weight,0.2
+aggressive_fund_final_ml_top5,"2458.TW 義隆,2379.TW 瑞昱,5269.TW 祥碩,2527.TW 宏璟,3034.TW 聯詠"
+defensive_fund_ml_85_15_top5,"3014.TW 聯陽,5269.TW 祥碩,2458.TW 義隆,2527.TW 宏璟,6781.TW AES-KY"
+fundamental_only_top5,"2059.TW 川湖,2330.TW 台積電,7610.TW 聯友金屬-創,6781.TW AES-KY,6197.TW 佳必琪"
+final_score_only_top5,"7610.TW 聯友金屬-創,2059.TW 川湖,2395.TW 研華,2458.TW 義隆,3026.TW 禾伸堂"
+stable_ml_only_top5,"6691.TW 洋基工程,3034.TW 聯詠,6139.TW 亞翔,2923.TW 鼎固-KY,2527.TW 宏璟"
