@@ -13,7 +13,7 @@
       "entry_date": "2026-07-02",
       "entry_price": 7382.374999999999,
       "entry_cost": 199608.16187812499,
-      "holding_bars": 8
+      "holding_bars": 9
     },
     {
       "symbol": "2379.TW",
@@ -23,7 +23,7 @@
       "entry_date": "2026-07-02",
       "entry_price": 801.8009999999999,
       "entry_cost": 203144.722305525,
-      "holding_bars": 8
+      "holding_bars": 9
     },
     {
       "symbol": "6525.TW",
@@ -33,7 +33,7 @@
       "entry_date": "2026-07-02",
       "entry_price": 149.6495,
       "entry_cost": 200216.63471809996,
-      "holding_bars": 8
+      "holding_bars": 9
     },
     {
       "symbol": "8016.TW",
@@ -43,7 +43,7 @@
       "entry_date": "2026-07-02",
       "entry_price": 330.8305,
       "entry_cost": 194805.53687594997,
-      "holding_bars": 8
+      "holding_bars": 9
     }
   ],
   "pending_orders": [
