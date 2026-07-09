@@ -1,7 +1,7 @@
 {
   "model_version": "Rule-Based Strict",
   "initial_cash": 1000000.0,
-  "cash": 166056.43657850008,
+  "cash": 956.8043810001109,
   "start_date": "2026-07-01",
   "last_signal_date": "2026-07-08",
   "positions": [
@@ -13,7 +13,7 @@
       "entry_date": "2026-07-02",
       "entry_price": 7382.374999999999,
       "entry_cost": 199608.16187812499,
-      "holding_bars": 9
+      "holding_bars": 10
     },
     {
       "symbol": "2379.TW",
@@ -23,7 +23,7 @@
       "entry_date": "2026-07-02",
       "entry_price": 801.8009999999999,
       "entry_cost": 203144.722305525,
-      "holding_bars": 9
+      "holding_bars": 10
     },
     {
       "symbol": "6525.TW",
@@ -33,7 +33,7 @@
       "entry_date": "2026-07-02",
       "entry_price": 149.6495,
       "entry_cost": 200216.63471809996,
-      "holding_bars": 9
+      "holding_bars": 10
     },
     {
       "symbol": "8016.TW",
@@ -43,16 +43,18 @@
       "entry_date": "2026-07-02",
       "entry_price": 330.8305,
       "entry_cost": 194805.53687594997,
-      "holding_bars": 9
-    }
-  ],
-  "pending_orders": [
+      "holding_bars": 10
+    },
     {
-      "type": "buy",
       "symbol": "7610.TW",
       "name": "聯友金屬-創",
-      "signal_date": "2026-07-08",
-      "status": "pending_next_open"
+      "shares": 61,
+      "entry_signal_date": "2026-07-08",
+      "entry_date": "2026-07-09",
+      "entry_price": 2702.7,
+      "entry_cost": 165099.63219749997,
+      "holding_bars": 1
     }
-  ]
+  ],
+  "pending_orders": []
 }
