@@ -1,12 +1,12 @@
 item,value
 latest_date,2026-07-09
 market_regime,bull
-universe_rows,1082
-candidate_rows,126
+universe_rows,1083
+candidate_rows,125
 max_positions,5
 position_weight,0.2
 aggressive_fund_final_ml_top5,"2423.TW 固緯,2458.TW 義隆,2527.TW 宏璟,6753.TW 龍德造船,2379.TW 瑞昱"
 defensive_fund_ml_85_15_top5,"2423.TW 固緯,2527.TW 宏璟,5269.TW 祥碩,2458.TW 義隆,3006.TW 晶豪科"
 fundamental_only_top5,"2059.TW 川湖,2408.TW 南亞科,2330.TW 台積電,3006.TW 晶豪科,7610.TW 聯友金屬-創"
-final_score_only_top5,"7610.TW 聯友金屬-創,2059.TW 川湖,2395.TW 研華,6446.TW 藥華藥,3026.TW 禾伸堂"
-stable_ml_only_top5,"3028.TW 增你強,6139.TW 亞翔,2923.TW 鼎固-KY,3034.TW 聯詠,3717.TW 聯嘉投控"
+final_score_only_top5,"7610.TW 聯友金屬-創,2059.TW 川湖,6446.TW 藥華藥,2395.TW 研華,3026.TW 禾伸堂"
+stable_ml_only_top5,"3028.TW 增你強,6139.TW 亞翔,2923.TW 鼎固-KY,3034.TW 聯詠,3046.TW 建碁"
