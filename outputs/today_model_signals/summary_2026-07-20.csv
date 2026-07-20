@@ -1,0 +1,12 @@
+item,value
+latest_date,2026-07-20
+market_regime,bull
+universe_rows,1080
+candidate_rows,107
+max_positions,5
+position_weight,0.2
+aggressive_fund_final_ml_top5,"2527.TW 宏璟,2645.TW 長榮航太,5515.TW 建國,2423.TW 固緯,5269.TW 祥碩"
+defensive_fund_ml_85_15_top5,"5269.TW 祥碩,2527.TW 宏璟,9942.TW 茂順,2423.TW 固緯,2645.TW 長榮航太"
+fundamental_only_top5,"2059.TW 川湖,6446.TW 藥華藥,2423.TW 固緯,5269.TW 祥碩,2395.TW 研華"
+final_score_only_top5,"2527.TW 宏璟,2059.TW 川湖,2395.TW 研華,5515.TW 建國,2645.TW 長榮航太"
+stable_ml_only_top5,"2908.TW 特力,2546.TW 根基,2849.TW 安泰銀,8462.TW 柏文,2645.TW 長榮航太"
