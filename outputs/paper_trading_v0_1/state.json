@@ -13,7 +13,7 @@
       "entry_date": "2026-07-02",
       "entry_price": 7382.374999999999,
       "entry_cost": 199608.16187812499,
-      "holding_bars": 21
+      "holding_bars": 22
     },
     {
       "symbol": "2379.TW",
@@ -23,7 +23,7 @@
       "entry_date": "2026-07-02",
       "entry_price": 801.8009999999999,
       "entry_cost": 203144.722305525,
-      "holding_bars": 21
+      "holding_bars": 22
     },
     {
       "symbol": "6525.TW",
@@ -33,7 +33,7 @@
       "entry_date": "2026-07-02",
       "entry_price": 149.6495,
       "entry_cost": 200216.63471809996,
-      "holding_bars": 21
+      "holding_bars": 22
     },
     {
       "symbol": "8016.TW",
@@ -43,7 +43,7 @@
       "entry_date": "2026-07-02",
       "entry_price": 330.8305,
       "entry_cost": 194805.53687594997,
-      "holding_bars": 21
+      "holding_bars": 22
     },
     {
       "symbol": "7610.TW",
@@ -53,8 +53,25 @@
       "entry_date": "2026-07-09",
       "entry_price": 2702.7,
       "entry_cost": 165099.63219749997,
-      "holding_bars": 12
+      "holding_bars": 13
     }
   ],
-  "pending_orders": []
+  "pending_orders": [
+    {
+      "type": "sell",
+      "symbol": "8016.TW",
+      "name": "矽創",
+      "signal_date": "2026-07-20",
+      "reason": "stop_loss",
+      "status": "pending_next_open"
+    },
+    {
+      "type": "sell",
+      "symbol": "7610.TW",
+      "name": "聯友金屬-創",
+      "signal_date": "2026-07-20",
+      "reason": "stop_loss",
+      "status": "pending_next_open"
+    }
+  ]
 }
