@@ -1,7 +1,7 @@
 {
   "model_version": "Rule-Based Strict",
   "initial_cash": 1000000.0,
-  "cash": 284928.1272275751,
+  "cash": 26.509708591809613,
   "start_date": "2026-07-01",
   "last_signal_date": "2026-07-21",
   "positions": [
@@ -13,7 +13,7 @@
       "entry_date": "2026-07-02",
       "entry_price": 7382.374999999999,
       "entry_cost": 199608.16187812499,
-      "holding_bars": 24
+      "holding_bars": 25
     },
     {
       "symbol": "2379.TW",
@@ -23,7 +23,7 @@
       "entry_date": "2026-07-02",
       "entry_price": 801.8009999999999,
       "entry_cost": 203144.722305525,
-      "holding_bars": 24
+      "holding_bars": 25
     },
     {
       "symbol": "6525.TW",
@@ -33,23 +33,28 @@
       "entry_date": "2026-07-02",
       "entry_price": 149.6495,
       "entry_cost": 200216.63471809996,
-      "holding_bars": 24
-    }
-  ],
-  "pending_orders": [
-    {
-      "type": "buy",
-      "symbol": "2395.TW",
-      "name": "研華",
-      "signal_date": "2026-07-21",
-      "status": "pending_next_open"
+      "holding_bars": 25
     },
     {
-      "type": "buy",
+      "symbol": "2395.TW",
+      "name": "研華",
+      "shares": 304,
+      "entry_signal_date": "2026-07-21",
+      "entry_date": "2026-07-22",
+      "entry_price": 589.5889999999999,
+      "entry_cost": 179490.4659548,
+      "holding_bars": 1
+    },
+    {
       "symbol": "4763.TW",
       "name": "材料*-KY",
-      "signal_date": "2026-07-21",
-      "status": "pending_next_open"
+      "shares": 2070,
+      "entry_signal_date": "2026-07-21",
+      "entry_date": "2026-07-22",
+      "entry_price": 50.850799236297604,
+      "entry_cost": 105411.15156418331,
+      "holding_bars": 1
     }
-  ]
+  ],
+  "pending_orders": []
 }
