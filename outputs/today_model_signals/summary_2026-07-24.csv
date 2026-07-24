@@ -1,0 +1,12 @@
+item,value
+latest_date,2026-07-24
+market_regime,bull
+universe_rows,1080
+candidate_rows,120
+max_positions,5
+position_weight,0.2
+aggressive_fund_final_ml_top5,"5515.TW 建國,2527.TW 宏璟,6598.TW ABC-KY,6177.TW 達麗,2376.TW 技嘉"
+defensive_fund_ml_85_15_top5,"6177.TW 達麗,9942.TW 茂順,5515.TW 建國,8464.TW 億豐,2527.TW 宏璟"
+fundamental_only_top5,"2059.TW 川湖,6177.TW 達麗,2395.TW 研華,8464.TW 億豐,9942.TW 茂順"
+final_score_only_top5,"2395.TW 研華,6598.TW ABC-KY,1810.TW 和成,2527.TW 宏璟,2376.TW 技嘉"
+stable_ml_only_top5,"2376.TW 技嘉,2546.TW 根基,2908.TW 特力,2849.TW 安泰銀,5538.TW 東明-KY"
