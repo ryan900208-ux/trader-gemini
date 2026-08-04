@@ -1,0 +1,12 @@
+item,value
+latest_date,2026-08-04
+market_regime,neutral
+universe_rows,1081
+candidate_rows,95
+max_positions,5
+position_weight,0.2
+aggressive_fund_final_ml_top5,"1476.TW 儒鴻,1438.TW 三地開發,1808.TW 潤隆,2395.TW 研華,5515.TW 建國"
+defensive_fund_ml_85_15_top5,"2527.TW 宏璟,5515.TW 建國,1476.TW 儒鴻,4736.TW 泰博,2395.TW 研華"
+fundamental_only_top5,"2395.TW 研華,1476.TW 儒鴻,2527.TW 宏璟,5515.TW 建國,2539.TW 櫻花建"
+final_score_only_top5,"6598.TW ABC-KY,2395.TW 研華,2027.TW 大成鋼,2618.TW 長榮航,1808.TW 潤隆"
+stable_ml_only_top5,"8462.TW 柏文,1438.TW 三地開發,2540.TW 愛山林,2546.TW 根基,2535.TW 達欣工"
