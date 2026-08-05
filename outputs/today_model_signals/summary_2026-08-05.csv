@@ -1,0 +1,12 @@
+item,value
+latest_date,2026-08-05
+market_regime,neutral
+universe_rows,1077
+candidate_rows,92
+max_positions,5
+position_weight,0.2
+aggressive_fund_final_ml_top5,"8464.TW 億豐,3034.TW 聯詠,1476.TW 儒鴻,5515.TW 建國,8462.TW 柏文"
+defensive_fund_ml_85_15_top5,"8464.TW 億豐,3034.TW 聯詠,5515.TW 建國,2101.TW 南港,1476.TW 儒鴻"
+fundamental_only_top5,"8464.TW 億豐,2101.TW 南港,1476.TW 儒鴻,5515.TW 建國,3034.TW 聯詠"
+final_score_only_top5,"2539.TW 櫻花建,6598.TW ABC-KY,2618.TW 長榮航,1476.TW 儒鴻,2006.TW 東和鋼鐵"
+stable_ml_only_top5,"8462.TW 柏文,2540.TW 愛山林,2546.TW 根基,1467.TW 南緯,2908.TW 特力"
