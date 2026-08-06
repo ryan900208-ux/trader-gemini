@@ -1,0 +1,12 @@
+item,value
+latest_date,2026-08-06
+market_regime,neutral
+universe_rows,1080
+candidate_rows,83
+max_positions,5
+position_weight,0.2
+aggressive_fund_final_ml_top5,"2527.TW 宏璟,2395.TW 研華,1476.TW 儒鴻,5515.TW 建國,2535.TW 達欣工"
+defensive_fund_ml_85_15_top5,"2101.TW 南港,2527.TW 宏璟,5515.TW 建國,3034.TW 聯詠,1476.TW 儒鴻"
+fundamental_only_top5,"2395.TW 研華,2101.TW 南港,1476.TW 儒鴻,2527.TW 宏璟,4763.TW 材料*-KY"
+final_score_only_top5,"2395.TW 研華,6598.TW ABC-KY,2377.TW 微星,2539.TW 櫻花建,2027.TW 大成鋼"
+stable_ml_only_top5,"8462.TW 柏文,2376.TW 技嘉,1438.TW 三地開發,2546.TW 根基,2535.TW 達欣工"
