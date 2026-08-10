@@ -1,0 +1,12 @@
+﻿item,value
+latest_date,2026-08-10
+market_regime,neutral
+universe_rows,1079
+candidate_rows,128
+max_positions,5
+position_weight,0.2
+aggressive_fund_final_ml_top5,"3017.TW 奇鋐,6177.TW 達麗,3034.TW 聯詠,1590.TW 亞德客-KY,1808.TW 潤隆"
+defensive_fund_ml_85_15_top5,"2025.TW 千興,6491.TW 晶碩,6177.TW 達麗,3017.TW 奇鋐,1590.TW 亞德客-KY"
+fundamental_only_top5,"6782.TW 視陽,1590.TW 亞德客-KY,3653.TW 健策,6177.TW 達麗,6491.TW 晶碩"
+final_score_only_top5,"3653.TW 健策,3416.TW 融程電,1590.TW 亞德客-KY,6669.TW 緯穎,1808.TW 潤隆"
+stable_ml_only_top5,"8462.TW 柏文,2025.TW 千興,2376.TW 技嘉,1456.TW 怡華,2535.TW 達欣工"
