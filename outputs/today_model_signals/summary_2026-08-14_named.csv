@@ -1,0 +1,12 @@
+﻿item,value
+latest_date,2026-08-14
+market_regime,neutral
+universe_rows,1079
+candidate_rows,126
+max_positions,5
+position_weight,0.2
+aggressive_fund_final_ml_top5,"5515.TW 建國,2454.TW 聯發科,8271.TW 宇瞻,9946.TW 三發地產,6491.TW 晶碩"
+defensive_fund_ml_85_15_top5,"9946.TW 三發地產,6491.TW 晶碩,8271.TW 宇瞻,8464.TW 億豐,3034.TW 聯詠"
+fundamental_only_top5,"2408.TW 南亞科,2344.TW 華邦電,6782.TW 視陽,8271.TW 宇瞻,9946.TW 三發地產"
+final_score_only_top5,"2408.TW 南亞科,2344.TW 華邦電,6669.TW 緯穎,3008.TW 大立光,2465.TW 麗臺"
+stable_ml_only_top5,"6691.TW 洋基工程,8462.TW 柏文,9933.TW 中鼎,1438.TW 三地開發,9935.TW 慶豐富"
