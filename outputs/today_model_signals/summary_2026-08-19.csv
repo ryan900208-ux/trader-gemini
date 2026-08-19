@@ -1,0 +1,12 @@
+item,value
+latest_date,2026-08-19
+market_regime,neutral
+universe_rows,1077
+candidate_rows,103
+max_positions,5
+position_weight,0.2
+aggressive_fund_final_ml_top5,"3017.TW 奇鋐,1808.TW 潤隆,3034.TW 聯詠,6177.TW 達麗,9946.TW 三發地產"
+defensive_fund_ml_85_15_top5,"9946.TW 三發地產,6177.TW 達麗,3017.TW 奇鋐,6183.TW 關貿,3034.TW 聯詠"
+fundamental_only_top5,"2408.TW 南亞科,3006.TW 晶豪科,6446.TW 藥華藥,6782.TW 視陽,9946.TW 三發地產"
+final_score_only_top5,"6446.TW 藥華藥,2408.TW 南亞科,3017.TW 奇鋐,6409.TW 旭隼,3006.TW 晶豪科"
+stable_ml_only_top5,"2537.TW 聯上發,8462.TW 柏文,2376.TW 技嘉,9946.TW 三發地產,9935.TW 慶豐富"
