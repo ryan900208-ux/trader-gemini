@@ -1,0 +1,12 @@
+﻿item,value
+latest_date,2026-08-24
+market_regime,neutral
+universe_rows,1077
+candidate_rows,116
+max_positions,5
+position_weight,0.2
+aggressive_fund_final_ml_top5,"3443.TW 創意,2248.TW 華勝-KY,3017.TW 奇鋐,5515.TW 建國,4967.TW 十銓"
+defensive_fund_ml_85_15_top5,"4967.TW 十銓,3443.TW 創意,2248.TW 華勝-KY,2025.TW 千興,2383.TW 台光電"
+fundamental_only_top5,"2408.TW 南亞科,3006.TW 晶豪科,2344.TW 華邦電,6446.TW 藥華藥,6782.TW 視陽"
+final_score_only_top5,"2408.TW 南亞科,3653.TW 健策,3006.TW 晶豪科,6446.TW 藥華藥,2465.TW 麗臺"
+stable_ml_only_top5,"2537.TW 聯上發,2025.TW 千興,2516.TW 新建,2546.TW 根基,3712.TW 永崴投控"
