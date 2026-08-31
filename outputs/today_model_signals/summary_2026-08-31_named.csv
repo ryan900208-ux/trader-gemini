@@ -1,0 +1,12 @@
+﻿item,value
+latest_date,2026-08-31
+market_regime,bull
+universe_rows,1078
+candidate_rows,123
+max_positions,5
+position_weight,0.2
+aggressive_fund_final_ml_top5,"3443.TW 創意,6491.TW 晶碩,2383.TW 台光電,3006.TW 晶豪科,4771.TW 望隼"
+defensive_fund_ml_85_15_top5,"2383.TW 台光電,3443.TW 創意,6491.TW 晶碩,3034.TW 聯詠,1817.TW 凱撒衛"
+fundamental_only_top5,"2059.TW 川湖,2408.TW 南亞科,3006.TW 晶豪科,2344.TW 華邦電,4771.TW 望隼"
+final_score_only_top5,"3006.TW 晶豪科,2408.TW 南亞科,2059.TW 川湖,3443.TW 創意,6491.TW 晶碩"
+stable_ml_only_top5,"2537.TW 聯上發,6409.TW 旭隼,6669.TW 緯穎,3034.TW 聯詠,2392.TW 正崴"
