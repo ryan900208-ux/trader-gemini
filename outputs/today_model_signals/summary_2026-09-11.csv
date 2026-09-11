@@ -1,0 +1,12 @@
+item,value
+latest_date,2026-09-11
+market_regime,bull
+universe_rows,1076
+candidate_rows,94
+max_positions,5
+position_weight,0.2
+aggressive_fund_final_ml_top5,"6805.TW 富世達,3006.TW 晶豪科,3443.TW 創意,3017.TW 奇鋐,4967.TW 十銓"
+defensive_fund_ml_85_15_top5,"6805.TW 富世達,3006.TW 晶豪科,4967.TW 十銓,3017.TW 奇鋐,3443.TW 創意"
+fundamental_only_top5,"3006.TW 晶豪科,6805.TW 富世達,3653.TW 健策,3167.TW 大量,4771.TW 望隼"
+final_score_only_top5,"6426.TW 統新,3653.TW 健策,6805.TW 富世達,3008.TW 大立光,3006.TW 晶豪科"
+stable_ml_only_top5,"2516.TW 新建,2114.TW 鑫永銓,3034.TW 聯詠,3017.TW 奇鋐,4967.TW 十銓"
