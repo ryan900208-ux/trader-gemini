@@ -1,0 +1,12 @@
+item,value
+latest_date,2026-09-16
+market_regime,bull
+universe_rows,1069
+candidate_rows,80
+max_positions,5
+position_weight,0.2
+aggressive_fund_final_ml_top5,"7765.TW 中華資安,3443.TW 創意,2455.TW 全新,3406.TW 玉晶光,6491.TW 晶碩"
+defensive_fund_ml_85_15_top5,"7765.TW 中華資安,3443.TW 創意,3006.TW 晶豪科,6491.TW 晶碩,2455.TW 全新"
+fundamental_only_top5,"3006.TW 晶豪科,7765.TW 中華資安,2455.TW 全新,3167.TW 大量,6491.TW 晶碩"
+final_score_only_top5,"2455.TW 全新,3406.TW 玉晶光,3229.TW 晟鈦,1709.TW 和益,6426.TW 統新"
+stable_ml_only_top5,"2516.TW 新建,3034.TW 聯詠,7765.TW 中華資安,2357.TW 華碩,2030.TW 彰源"
