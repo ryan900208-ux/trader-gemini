@@ -1,0 +1,12 @@
+item,value
+latest_date,2026-09-23
+market_regime,bull
+universe_rows,1075
+candidate_rows,79
+max_positions,5
+position_weight,0.2
+aggressive_fund_final_ml_top5,"7765.TW 中華資安,3017.TW 奇鋐,4771.TW 望隼,2454.TW 聯發科,2527.TW 宏璟"
+defensive_fund_ml_85_15_top5,"7765.TW 中華資安,3017.TW 奇鋐,4771.TW 望隼,2527.TW 宏璟,2360.TW 致茂"
+fundamental_only_top5,"2360.TW 致茂,6531.TW 愛普*,7765.TW 中華資安,3167.TW 大量,4771.TW 望隼"
+final_score_only_top5,"2360.TW 致茂,3167.TW 大量,7765.TW 中華資安,2454.TW 聯發科,6531.TW 愛普*"
+stable_ml_only_top5,"2376.TW 技嘉,2516.TW 新建,2929.TW 淘帝-KY,3017.TW 奇鋐,2069.TW 運錩"
