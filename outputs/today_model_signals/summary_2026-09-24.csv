@@ -1,0 +1,12 @@
+item,value
+latest_date,2026-09-24
+market_regime,bull
+universe_rows,1072
+candidate_rows,56
+max_positions,5
+position_weight,0.2
+aggressive_fund_final_ml_top5,"3017.TW 奇鋐,2360.TW 致茂,3044.TW 健鼎,2395.TW 研華,2527.TW 宏璟"
+defensive_fund_ml_85_15_top5,"3017.TW 奇鋐,2527.TW 宏璟,2360.TW 致茂,2395.TW 研華,3044.TW 健鼎"
+fundamental_only_top5,"2360.TW 致茂,6531.TW 愛普*,2395.TW 研華,3017.TW 奇鋐,2527.TW 宏璟"
+final_score_only_top5,"2360.TW 致茂,6426.TW 統新,1709.TW 和益,6531.TW 愛普*,2395.TW 研華"
+stable_ml_only_top5,"2376.TW 技嘉,2929.TW 淘帝-KY,1456.TW 怡華,2069.TW 運錩,3017.TW 奇鋐"
