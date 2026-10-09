@@ -1,11 +1,11 @@
 item,value
 latest_date,2026-10-08
 market_regime,bull
-universe_rows,1076
-candidate_rows,104
+universe_rows,1082
+candidate_rows,103
 max_positions,5
 position_weight,0.2
-aggressive_fund_final_ml_top5,"6805.TW 富世達,3443.TW 創意,3017.TW 奇鋐,2527.TW 宏璟,2455.TW 全新"
+aggressive_fund_final_ml_top5,"6805.TW 富世達,3443.TW 創意,3017.TW 奇鋐,2527.TW 宏璟,2025.TW 千興"
 defensive_fund_ml_85_15_top5,"6805.TW 富世達,3014.TW 聯陽,6491.TW 晶碩,3443.TW 創意,2025.TW 千興"
 fundamental_only_top5,"2330.TW 台積電,2360.TW 致茂,6531.TW 愛普*,6902.TW GOGOLOOK,6805.TW 富世達"
 final_score_only_top5,"3443.TW 創意,2455.TW 全新,2360.TW 致茂,6805.TW 富世達,2395.TW 研華"
