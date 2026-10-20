@@ -1,0 +1,12 @@
+item,value
+latest_date,2026-10-20
+market_regime,bull
+universe_rows,1076
+candidate_rows,163
+max_positions,5
+position_weight,0.2
+aggressive_fund_final_ml_top5,"3443.TW 創意,8996.TW 高力,3034.TW 聯詠,3044.TW 健鼎,3406.TW 玉晶光"
+defensive_fund_ml_85_15_top5,"3443.TW 創意,8996.TW 高力,3017.TW 奇鋐,3034.TW 聯詠,4766.TW 南寶"
+fundamental_only_top5,"3535.TW 晶彩科,6782.TW 視陽,8996.TW 高力,2368.TW 金像電,3443.TW 創意"
+final_score_only_top5,"6782.TW 視陽,2368.TW 金像電,6505.TW 台塑化,1709.TW 和益,6658.TW 聯策"
+stable_ml_only_top5,"7711.TW 永擎,1456.TW 怡華,3443.TW 創意,3705.TW 永信,2379.TW 瑞昱"
