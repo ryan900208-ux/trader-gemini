@@ -1,0 +1,12 @@
+﻿item,value
+latest_date,2026-10-27
+market_regime,bull
+universe_rows,1079
+candidate_rows,125
+max_positions,5
+position_weight,0.2
+aggressive_fund_final_ml_top5,"3034.TW 聯詠,6491.TW 晶碩,2025.TW 千興,4766.TW 南寶,2379.TW 瑞昱"
+defensive_fund_ml_85_15_top5,"2025.TW 千興,6491.TW 晶碩,3034.TW 聯詠,4766.TW 南寶,2379.TW 瑞昱"
+fundamental_only_top5,"6782.TW 視陽,3533.TW 嘉澤,6491.TW 晶碩,2025.TW 千興,6209.TW 今國光"
+final_score_only_top5,"6782.TW 視陽,6209.TW 今國光,6491.TW 晶碩,3533.TW 嘉澤,6415.TW 矽力*-KY"
+stable_ml_only_top5,"2516.TW 新建,2025.TW 千興,1456.TW 怡華,2379.TW 瑞昱,3705.TW 永信"
