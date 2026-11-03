@@ -1,0 +1,12 @@
+﻿item,value
+latest_date,2026-11-03
+market_regime,neutral
+universe_rows,1075
+candidate_rows,105
+max_positions,5
+position_weight,0.2
+aggressive_fund_final_ml_top5,"7765.TW 中華資安,4588.TW 玖鼎電力,3034.TW 聯詠,2727.TW 王品,3005.TW 神基"
+defensive_fund_ml_85_15_top5,"3034.TW 聯詠,2379.TW 瑞昱,7765.TW 中華資安,1817.TW 凱撒衛,4588.TW 玖鼎電力"
+fundamental_only_top5,"6782.TW 視陽,7765.TW 中華資安,1817.TW 凱撒衛,3034.TW 聯詠,2379.TW 瑞昱"
+final_score_only_top5,"6782.TW 視陽,6415.TW 矽力*-KY,4720.TW 德淵,1416.TW 廣豐,4904.TW 遠傳"
+stable_ml_only_top5,"2516.TW 新建,2727.TW 王品,9933.TW 中鼎,1456.TW 怡華,3034.TW 聯詠"
