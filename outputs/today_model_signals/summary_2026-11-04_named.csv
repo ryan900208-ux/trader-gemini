@@ -1,0 +1,12 @@
+﻿item,value
+latest_date,2026-11-04
+market_regime,neutral
+universe_rows,1081
+candidate_rows,84
+max_positions,5
+position_weight,0.2
+aggressive_fund_final_ml_top5,"7765.TW 中華資安,2727.TW 王品,4904.TW 遠傳,3005.TW 神基,2618.TW 長榮航"
+defensive_fund_ml_85_15_top5,"7765.TW 中華資安,1817.TW 凱撒衛,2727.TW 王品,2901.TW 欣欣,2618.TW 長榮航"
+fundamental_only_top5,"6782.TW 視陽,7765.TW 中華資安,1817.TW 凱撒衛,2901.TW 欣欣,5007.TW 三星"
+final_score_only_top5,"6782.TW 視陽,7765.TW 中華資安,1528.TW 恩德,4720.TW 德淵,4770.TW 上品"
+stable_ml_only_top5,"2727.TW 王品,9933.TW 中鼎,2069.TW 運錩,1626.TW 艾美特-KY,6952.TW 大武山"
